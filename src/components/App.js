@@ -14,6 +14,11 @@ import { applyNumber, changeOperation, clearDisplay, addMem, applyMem, clearMem 
 function App() {
   const [ state, dispatch ] = useReducer(reducer, initialState); // console.log state
   
+
+  // dispatch takes our action and applies it to our reducer (which we imported and declared in use reducer) each action we made declares an action.type and if you take a look at reducer each action.type has a specific case where we make changes to the initialState (that we called/imported) then the handle click is our onclick function that allows the action run when the button is clicked
+
+  // dispatch takes action >> action returns type >> type runs through reducer >> reducer makes changes to state
+  
   const handleNumClick =(num) => {
     dispatch(applyNumber(num)); 
   }

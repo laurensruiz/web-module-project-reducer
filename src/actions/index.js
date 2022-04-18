@@ -6,9 +6,9 @@ export const CLEAR_DISPLAY = "CLEAR_DISPLAY";
 export const ADD_MEM = "ADD_MEM";
 export const APPLY_MEM = "APPLY_MEM";
 export const CLEAR_MEM = "CLEAR_MEM";
-
+// actions we make to input into the reducer
 export const addOne = () => {
-    return({type:ADD_ONE});
+    return({type:ADD_ONE}); 
 }
 
 export const applyNumber = (number) => {

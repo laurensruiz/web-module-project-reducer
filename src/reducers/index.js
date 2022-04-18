@@ -23,7 +23,7 @@ const calculateResult = (num1, num2, operation) => {
             return num1 - num2;
     }
 }
-
+// state is initial state, action is the actions folder index file we have.
 const reducer = (state, action) => {
     switch(action.type) {
         case(ADD_ONE):
