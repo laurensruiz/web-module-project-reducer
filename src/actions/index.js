@@ -4,6 +4,8 @@ export const APPLY_NUMBER = "APPLY_NUMBER";
 export const CHANGE_OPERATION = "CHANGE_OPERATION";
 export const CLEAR_DISPLAY = "CLEAR_DISPLAY";
 export const ADD_MEM = "ADD_MEM";
+export const APPLY_MEM = "APPLY_MEM";
+export const CLEAR_MEM = "CLEAR_MEM";
 
 export const addOne = () => {
     return({type:ADD_ONE});
@@ -23,4 +25,12 @@ export const clearDisplay =()=>{
 
 export const addMem =()=>{
     return({type:ADD_MEM})
+}
+
+export const applyMem =()=>{
+    return({type:APPLY_MEM})
+}
+
+export const clearMem = () => {
+    return({type:CLEAR_MEM})
 }
